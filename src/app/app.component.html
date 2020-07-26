@@ -1,0 +1,31 @@
+﻿<!-- nav -->
+<!-- <app-dashboard></app-dashboard> -->
+<nav>
+    
+    <!-- <a routerLink='/login'>Sign In</a> --> 
+    <ul>
+    <button [routerLink]="['./login']">Log In    </button>
+ 
+
+   
+</ul> 
+</nav>
+<router-outlet></router-outlet>
+<!-- <app-optionlist></app-optionlist> -->
+
+  
+<!-- main app container -->
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+<!-- credits 
+<div class="text-center mt-4">
+    <p>
+        <a href="https://jasonwatmore.com/post/2019/06/26/angular-8-basic-http-authentication-tutorial-example" target="_top">Angular 8 - Basic HTTP Authentication Example & Tutorial</a>
+    </p>
+    <p>
+        <a href="https://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+    </p>
+</div>
+-->

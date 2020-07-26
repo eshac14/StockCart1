@@ -1,0 +1,19 @@
+<p>Select sector
+    
+</p>
+<!-- <hello name="{{ name }}"></hello> -->
+<!-- <select>
+<option value="">---- Select Sector -----</option>
+<option value ="1">Information Technology</option>
+<option value ="2">Pharmaceuticals</option>
+<option value ="3">Housing Finance</option>
+<option value ="4">Automobiles</option>
+<option value ="5">Infrastructure</option>
+
+</select> -->
+<select [(ngModel)]="selected" name="status" placeholder="select" (ngModelChange)="onOptionsSelected()">
+    <option *ngFor="let sta of status" [ngValue]="sta">{{sta}}</option>
+  </select>
+  <div>
+  {{filtered|json}}
+  </div>
